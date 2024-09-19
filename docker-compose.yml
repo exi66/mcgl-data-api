@@ -14,7 +14,7 @@ services:
     volumes:
       - /root/mcgl:/app/.source
     ports:
-      - "80"
+      - $NODE_LOCAL_PORT
 networks:
   dokploy-network:
     external: true
