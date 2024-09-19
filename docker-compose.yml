@@ -26,6 +26,8 @@ services:
     tty: true
     networks:
       - dokploy-network
+    volumes:
+      - /root/mcgl:/app/.source
 volumes:
   db:
 networks:
