@@ -2,6 +2,17 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const { checkSchema, validationResult } = require("express-validator");
+const rateLimit = require("express-rate-limit");
+
+const limiter = rateLimit({
+  windowMs: 1000,
+  limit: 2,
+  standardHeaders: "draft-7",
+  legacyHeaders: false,
+  message: { error: "Too many requests! Only two per second allowed!" },
+});
+
+router.use(limiter);
 
 const Post = require(path.join(__dirname, "../models/post.js"));
 const Comment = require(path.join(__dirname, "../models/comment.js"));
