@@ -7,13 +7,15 @@
 
 ## Запуск
 
-1. Создайте `.env` по подобию `.env-example` в корне проекта
-2. Запустите докер
+1. Скачайте [архив](https://github.com/exi66/mcgl-data-api/releases/download/v0.0.0/source.zip) и распакуйте его по пути
+   `/app/.source/`
+2. Создайте `.env` по подобию `.env-example` в корне проекта
+3. Запустите докер
     ```shell
     docker compose -f .\docker-compose-local.yml up -d
     ```
-3. Перейдите любым способом в контейнер с nodejs
-4. Выполните миграцию
+4. Перейдите любым способом в контейнер с nodejs
+5. Выполните миграцию
     ```shell
     npm run migrate
     ```
