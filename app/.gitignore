@@ -11,6 +11,7 @@ node_modules
 *.local
 .local
 .source
+!.source/.gitkeep
 
 # Editor directories and files
 .vscode
