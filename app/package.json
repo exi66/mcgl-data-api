@@ -1,0 +1,25 @@
+{
+  "name": "mcgl-data",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "migrate": "node ./seeders/index.js"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "cookie-parser": "~1.4.4",
+    "date-fns": "^4.1.0",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "fs-extra": "^11.2.0",
+    "jszip": "^3.10.1",
+    "mongoose": "^8.6.3",
+    "morgan": "~1.9.1",
+    "path": "^0.12.7",
+    "process": "^0.11.10"
+  }
+}
