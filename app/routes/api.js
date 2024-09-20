@@ -117,7 +117,7 @@ router.get(
     return res.send({
       comments,
       totalPages: Math.ceil(count / limit),
-      currentPage: page,
+      currentPage: parseInt(page),
     });
   }
 );
@@ -171,7 +171,7 @@ router.get(
     return res.send({
       posts,
       totalPages: Math.ceil(count / limit),
-      currentPage: page,
+      currentPage: parseInt(page),
     });
   }
 );
